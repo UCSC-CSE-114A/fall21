@@ -1,19 +1,19 @@
 # Site settings
-course_name: History of Magic
+course_name: CSE 114A: Foundations of Programming Languages
 course_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare aliquam mattis. Donec hendrerit sollicitudin urna. Aliquam venenatis rutrum velit, at lobortis dui cursus a. Nam varius metus in turpis maximus, ut rhoncus tellus dictum. In aliquam tortor nec mi dapibus, sit amet vehicula dolor auctor."
-course_semester: "Fall 1998"
+course_semester: "Fall 2021"
 
 baseurl: "/jekyll-course-website-template" # the subpath of your site, e.g. /blog/
-url: "http://kazemnejad.github.io/" # the base hostname & protocol for your site
+url: "http://ucsc-cse-114a.github.io/" # the base hostname & protocol for your site
 
-schoolname: "Hogwarts"
-schoolurl: "https://hogwarts.edu"
-twitter_username: username 
+schoolname: "UC Santa Cruz, Baskin School of Engineering"
+schoolurl: "https://engineering.ucsc.edu"
+#twitter_username: owenarden
 
-address: |
-    School of Witchcraft and Wizardry
-    Hogwarts
-    Scotland
+#address: |
+#    School of Witchcraft and Wizardry
+#    Hogwarts
+#    Scotland
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
