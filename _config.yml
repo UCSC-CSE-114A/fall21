@@ -1,9 +1,11 @@
 # Site settings
 course_name: "CSE 114A: Foundations of Programming Languages"
-#course_description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ornare aliquam mattis. Donec hendrerit sollicitudin urna. Aliquam venenatis rutrum velit, at lobortis dui cursus a. Nam varius metus in turpis maximus, ut rhoncus tellus dictum. In aliquam tortor nec mi dapibus, sit amet vehicula dolor auctor."
+course_description: "Problem solving emphasizing recursion, data abstraction, and higher-order functions. Introduction to types and type checking, modular programming, and reasoning about program correctness.<br/>
+Prerequisite(s): CSE or CMPS 101"
+
 course_semester: "Fall 2021"
 
-baseurl: "/fall21/" # the subpath of your site, e.g. /blog/
+baseurl: "/fall21" # the subpath of your site, e.g. /blog/
 url: "http://ucsc-cse-114a.github.io/" # the base hostname & protocol for your site
 
 schoolname: "UC Santa Cruz, Baskin School of Engineering"

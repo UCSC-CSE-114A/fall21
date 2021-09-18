@@ -1,0 +1,14 @@
+{{ site.data.coursework.description }}
+<ul>
+    {% for p in site.data.coursework.policies %}
+    <li>{{ p }}</li>
+    {% endfor %}
+</ul>
+<table class="rubric">
+{% for p in site.data.coursework.rubric %}
+<tr>
+  <td><b>{{ p.name }}</b> <p>{{ p.description }}</p></td>
+  <td>{{ p.weight }}</p></td>
+</tr>
+{% endfor %}
+</table>

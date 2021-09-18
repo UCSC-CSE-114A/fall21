@@ -11,13 +11,13 @@ items:
   name: Lectures
   icon_class: fas fa-book-reader
 
-- url: /assignments/
+- url: https://classroom.github.com/classrooms/55762763-ucsc-cse-114a
   name: Assignments
   icon_class: fas fa-user-graduate
 
-- url: /project/
-  name: Project
-  icon_class: fas fa-user-graduate
+#- url: /project/
+#  name: Project
+#  icon_class: fas fa-user-graduate
 
 - url: /materials/
   name: Materials

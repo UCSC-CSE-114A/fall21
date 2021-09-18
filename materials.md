@@ -3,18 +3,32 @@ layout: page
 title: Materials
 permalink: /materials/
 ---
+## Dev Container
 
-{% include image.html url="/_images/cover2.jpg" width=175 align="right" %}
+We have created a [VS Code Development Container](https://code.visualstudio.com/docs/remote/containers) to
+help bootstrap your Haskell development. This is a docker container pre-configured with 
+a Haskell environment that you can interact with directly from [VS Code](https://code.visualstudio.com/Download).
 
-## Book
+You can download the latest version of the devcontainer [here](https://github.com/UCSC-CSE-114A/cs114a-devcontainer/releases/latest). See the included [README](https://github.com/UCSC-CSE-114A/cs114a-devcontainer) for installation instructions.
 
-Alan Turing and Noam Chomsky: Very Famous Book
+## Textbooks
+There are no required textbooks for this course, but using one or more of the
+following textbooks to expand your understanding of course topics is highly
+recommended. In particular, these textbooks are good sources of example
+problems to test your understanding of course concepts. When a free online copy
+is available (either a preprint or an ebook via the UCSC library), I've noted
+it below. More ebooks may become available through the library soon.
 
-## Additional Course Materials
+* <u>An Introduction to Functional Programming Through Lambda Calculus</u> by Greg Michaelson.
+       Free [pre-print](https://www.cs.rochester.edu/~brown/173/readings/LCBook.pdf).
+* <u>Thinking Functionally with Haskell</u> by Richard Bird.
+         Available 
+[online](https://ucsc.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991024922807004876&context=L&vid=01CDL_SCR_INST:USCS&search_scope=MyInst_and_CI&tab=Everything&lang=en) (free via library).
 
-* If you are not familiar with Python programming, use any online tutorial to get a handle of it.
-* [Material #1](http://www.example.com/): how a computer chess player thinks!
-* [Material #2](http://www.example.com/): how a computer chess player thinks!
-* [Material #3](http://www.example.com/): how a computer chess player thinks!
-* [Material #4](http://www.example.com/): how a computer chess player thinks!
-* [Material #5](http://www.example.com/): how a computer chess player thinks!
+* <u>Programming in Haskell</u> (2nd ed.) by Graham Hutton.
+
+* <u>Real World Haskell</u> by Bryan O'Sullivan.
+
+* <u>Learn You a Haskell for Great Good</u> by Miran Lipovača. Available [free online](http://learnyouahaskell.com/)
+
+* <u>Write You a Haskell</u> by Stephen Diehl. (incomplete, but useful) [Available](http://dev.stephendiehl.com/fun/)

@@ -1,19 +1,13 @@
 instructors:
-  - name: Albus Dumbledore
-    profile_pic: /_images/pp/dumbledore.jpg
-    webpage: https://en.wikipedia.org/wiki/Albus_Dumbledore
-  - name: Minerva McGonagall
-    profile_pic: /_images/pp/mcgonagall.jpg
+  - name: Owen Arden
+    profile_pic: /_images/pp/owen.jpg
+    webpage: https://users.soe.ucsc.edu/~owen/
 
 teaching_assistants:
-  - name: Harry Potter
-    profile_pic: /_images/pp/potter.jpg
-    webpage: https://en.wikipedia.org/wiki/Harry_Potter_(character)
+  - name: Ananya Das
+  - name: Aakash Mishra
 
-  - name: Hermione Granger
-    profile_pic: /_images/pp/granger.jpg
-    webpage: https://en.wikipedia.org/wiki/Hermione_Granger
-
-  - name: Ron Weasley
-    profile_pic: /_images/pp/weasley.jpg
-    webpage: https://en.wikipedia.org/wiki/Ron_Weasley
+tutors:
+  - name: Richard Shang
+  - name: Your Name Here!
+    webpage: https://rta.soe.ucsc.edu/rta/new

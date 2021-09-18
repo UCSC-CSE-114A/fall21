@@ -1,7 +1,11 @@
 <ul class="menu">
     {% for item in site.data.nav.items %}
     <li>
-        <a class="page-link" href="{{ item.url | prepend: site.baseurl }}">
+        <a class="page-link" href={% if item.url contains '://' %}
+					"{{ item.url }}"
+ 				  {% else %}
+					"{{ item.url | prepend: site.baseurl }}"
+ 				  {% endif %}}>
             <i class="{{ item.icon_class }}"></i> {{ item.name }}
         </a>
     </li>

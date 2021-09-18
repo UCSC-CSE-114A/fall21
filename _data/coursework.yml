@@ -1,0 +1,28 @@
+policies:
+  - Students are evaluated on the basis of homeworks, labs, a midterm, and a final exam.
+  - <b>Regrades must be requested within 2 weeks of receiving graded assignment.</b>
+  - A valid regrade request should include a specific reason for the regrade.
+  - Remember that we try very hard to assign partial credit fairly and consistently, so unless an actual
+    mistake occurred, your regrade request may be declined to ensure fairness to all students.
+
+rubric:
+ - name:         Class participation
+   description:  Involves answering questions in-class via Google Forms. 
+   weight:       5%
+ - name:         Homework assignments
+   description:  There will be 6 programming assignments, mostly in Haskell. 
+                 The first two are individual assignments, but the remaining assignments may be worked on in groups of at most <b>two</b>.
+                 Groups must be formed in GitHub Classroom to ensure both students receive credit.
+   weight:       30%
+ - name:         Midterm exam
+   description:  Will be held during lecture (see schedule). Closed book, but you may use a double-sided “cheat sheet.”
+   weight:       30%
+ - name:         Final exam
+   description:  Held on <b>December 7 from 12pm to 3pm</b> (location TBD). Closed book, but you may use a double-sided “cheat sheet.”
+                 <p>If your final grade is higher than your midterm grade, it will
+                 replace your midterm grade, <em>but you must take both the midterm and the final.</em></p>
+   weight:       35%
+ - name:         Extra credit
+   description:  Top 5% best participants (good questions / good answers) on the 
+                  <a href="https://ucsc-cse.zulipchat.com/#narrow/stream/297685-CSE114A-discussion">Zulip Stream</a> decided by course staff. 
+   weight:       +5%
