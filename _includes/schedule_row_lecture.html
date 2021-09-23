@@ -1,13 +1,18 @@
+<li class="table-row table-row-{{include.event.type}}{% if include.event.sublecture %}-cont{%endif%}">
 <div class="col col-1" data-label="Event">Lecture</div>
 <div class="col col-1-2" data-label="Date">
     {{ site.data.meetings.days[include.event.number] | date: site.dateformat }}
-    <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
+    <br class="date-spliter"/>{{ site.data.meetings.days[include.event.number] | date: "%A" }}
 </div>
 <div class="col col-2" data-label="Description">
-    {{ include.event.title }}
-    <div class="schedule-lecture-links">
-    {% include lecture_links.html lecture=include.event %}
-    </div>
+    {% if include.event.sublecture %}
+      &nbsp;&nbsp;&nbsp;&nbsp;{{ include.event.title }}
+    {% else %}
+      <span style="font-weight: bold;">{{ include.event.title }}</span>
+      <div class="schedule-lecture-links">
+      {% include lecture_links.html lecture=include.event %}
+      </div>
+    {% endif %}
 </div>
 <div class="col col-4 markdown-content" data-label="Course Material">
     <!-- {% if include.event.suggested_readings %}
@@ -24,3 +29,4 @@
     {{ event.content }}
     {% endif %}
 </div>
+</li>

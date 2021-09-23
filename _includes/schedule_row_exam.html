@@ -1,3 +1,4 @@
+<li class="table-row table-row-{{include.event.type}}">
 <div class="col col-1" style="color: #a94442 ;font-weight: bold;" data-label="Event">Exam</div>
 <div class="col col-1-2" style="font-weight: bold" data-label="Date">
     {{ event.date | date: site.dateformat }}
@@ -10,3 +11,4 @@
 <div class="col col-4 markdown-content" data-label="Course Material">
     {{ include.event.content}}
 </div>
+</li>

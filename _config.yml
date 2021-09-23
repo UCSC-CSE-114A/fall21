@@ -22,6 +22,7 @@ schoolurl: "https://engineering.ucsc.edu"
 
 ### Do not change the followings unless you know what you are doing ###
 
+timezone: America/Los_Angeles
 # Build settings
 markdown: kramdown
 

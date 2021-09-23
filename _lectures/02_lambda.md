@@ -1,8 +1,16 @@
 ---
+title: Lambda calculus
 type: lecture
 number: 1
-title: Lambda calculus
-tldr: "Course mechanics and intro to functional programming."
+continued:
+  - type: lecture
+    number: 2
+    title: continued
+    sublecture: true
+  - type: lecture
+    number: 3
+    title: continued
+    sublecture: true
 thumbnail: /static_files/presentations/lambda.jpg
 links:
     - url: /static_files/presentations/lambda.pdf
@@ -11,4 +19,5 @@ links:
       name: handout
     - url: http://goto.ucsd.edu/elsa/index.html 
       name: demo
+hide_from_announcments: true
 ---
