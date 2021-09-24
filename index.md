@@ -7,6 +7,5 @@ layout: home
 Course announcements and discussions happen on the 
 [CSE114A Zulip Stream](https://ucsc-cse.zulipchat.com/#narrow/stream/297685-CSE114A-discussion). 
 Contact course staff if you need an invitation.
-All assignments will be distributed on the 
-[GitHub Classroom site](https://classroom.github.com/classrooms/55762763-ucsc-cse-114a).
-
+All assignments managed through will be through GitHub Classroom. You can find 
+assignment links in [Canvas](https://canvas.ucsc.edu/courses/47306).
