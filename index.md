@@ -11,11 +11,11 @@ layout: home
  * Remote discussion section day/time TBD
 
 **TA Office Hours**
- * **Wednesdays** from 12pm to 1pm (Aakash) on [Zoom](TBD)
- * **Fridays** from 12pm to 1pm (Ananya) on [Zoom](TBD)
+ * **Wednesdays** from 12pm to 1pm (Aakash) on [Zoom](https://tiny.cc/cse114A-zoom-room)
+ * **Fridays** from 12pm to 1pm (Ananya) on [Zoom](https://tiny.cc/cse114A-zoom-room)
 
 **Group Tutoring**
- * **Every weekday** from 5pm to 8pm on [Zoom](TBD)
+ * **Every weekday** from 5pm to 8pm on [Zoom](https://tiny.cc/cse114A-zoom-room)
 
 Course announcements and discussions happen on the 
 [CSE114A Zulip Stream](https://ucsc-cse.zulipchat.com/#narrow/stream/297685-CSE114A-discussion). 
