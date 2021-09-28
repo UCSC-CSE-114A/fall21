@@ -9,6 +9,8 @@ links:
       name: slides
     - url: /static_files/presentations/intro-handout.pdf
       name: handout
+    - url: https://media.ucsc.edu/V/PlayList?node=11514898&a=35427954&autoplay=1
+      name: video 
 hide_from_announcments: true
 released: true
 ---

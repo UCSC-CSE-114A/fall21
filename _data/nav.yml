@@ -11,7 +11,7 @@ items:
   name: Lectures
   icon_class: fas fa-book-reader
 
-- url: https://classroom.github.com/classrooms/55762763-ucsc-cse-114a
+- url: https://canvas.ucsc.edu/courses/47306 
   name: Assignments
   icon_class: fas fa-user-graduate
 
