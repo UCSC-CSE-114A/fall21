@@ -19,8 +19,6 @@ links:
       name: handout
     - url: http://goto.ucsd.edu/elsa/index.html 
       name: demo
-    - url: https://media.ucsc.edu/V/Video?v=3685626&node=12578357&a=1699077159&autoplay=1
-      name: video 1 
 #hide_from_announcments: true
 released: true
 ---
