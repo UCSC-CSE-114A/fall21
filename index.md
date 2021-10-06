@@ -9,7 +9,7 @@ here**](https://media.ucsc.edu/P/VideoManagement/MediaLibrary/Users/oarden/MyMed
  * **Mondays** from 9:20am to 10:25am in [Earth and Marine Sciences Building, B210](https://goo.gl/maps/cNsEUvT7qx6UCeCWA)
  * **Wednesdays** from 1:20pm to 2:25pm in [Earth and Marine Sciences Building, B210](https://goo.gl/maps/cNsEUvT7qx6UCeCWA)
  * **Fridays** from 10:40am to 11:45am in [Earth and Marine Sciences Building, B210](https://goo.gl/maps/cNsEUvT7qx6UCeCWA)
- * Remote discussion section day/time TBD
+ * **Remote section**: See calendar below.
 
 **Office Hours**: 
  * **Prof. Arden**: After class or [by appointment](https://app.usemotion.com/meet/owenarden/office-hours-remote)
@@ -18,7 +18,7 @@ here**](https://media.ucsc.edu/P/VideoManagement/MediaLibrary/Users/oarden/MyMed
 Course announcements and discussions happen on the 
 [CSE114A Zulip Stream](https://ucsc-cse.zulipchat.com/#narrow/stream/297685-CSE114A-discussion). 
 Contact course staff if you need an invitation.
-All assignments managed through will be through GitHub Classroom. You can find 
+All assignments will be managed through GitHub Classroom and submitted to Gradescope. You can find 
 assignment links in [Canvas](https://canvas.ucsc.edu/courses/47306).
 
 <h2>This week</h2>
