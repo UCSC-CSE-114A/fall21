@@ -9,7 +9,7 @@ continued:
     sublecture: true
 thumbnail: /static_files/presentations/adt-rec.jpg
 links:
-    - url: /static_files/presentations/adt-rec.key.pdf
+    - url: /static_files/presentations/adt-rec.pdf
       name: slides
     - url: /static_files/presentations/adt-rec-handout.pdf
       name: handout
