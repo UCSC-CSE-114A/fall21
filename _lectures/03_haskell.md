@@ -8,6 +8,6 @@ links:
       name: slides
     - url: /static_files/presentations/haskell-handout.pdf
       name: handout
-#hide_from_announcments: true
+hide_from_announcments: true
 released: true
 ---

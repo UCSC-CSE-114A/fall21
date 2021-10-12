@@ -14,4 +14,5 @@ links:
     - url: /static_files/presentations/adt-rec-handout.pdf
       name: handout
 hide_from_announcments: false
+released: true 
 ---
