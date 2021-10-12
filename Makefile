@@ -4,7 +4,7 @@ KEYS=$(wildcard $(SLIDES_PATH)/*.key)
 PDFS=$(addsuffix .pdf,$(basename $(KEYS)))
 THUMBS=$(addsuffix .jpg,$(basename $(KEYS)))
 
-all: $(PDFS) $(THUMBS)
+slides: $(PDFS) $(THUMBS)
 
 $(SLIDES_PATH)/%.pdf: $(SLIDES_PATH)/%.key
 	export/keynote_export.sh -t pdf $<
