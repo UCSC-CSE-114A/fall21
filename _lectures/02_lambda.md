@@ -19,6 +19,6 @@ links:
       name: handout
     - url: http://goto.ucsd.edu/elsa/index.html 
       name: demo
-#hide_from_announcments: true
+hide_from_announcments: true
 released: true
 ---
