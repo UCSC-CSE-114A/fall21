@@ -21,6 +21,7 @@ it below. More ebooks may become available through the library soon.
 
 * <u>An Introduction to Functional Programming Through Lambda Calculus</u> by Greg Michaelson.
        Free [pre-print](https://www.cs.rochester.edu/~brown/173/readings/LCBook.pdf).
+
 * <u>Thinking Functionally with Haskell</u> by Richard Bird.
          Available 
 [online](https://ucsc.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma991024922807004876&context=L&vid=01CDL_SCR_INST:USCS&search_scope=MyInst_and_CI&tab=Everything&lang=en) (free via library).
@@ -32,3 +33,9 @@ it below. More ebooks may become available through the library soon.
 * <u>Learn You a Haskell for Great Good</u> by Miran Lipovača. Available [free online](http://learnyouahaskell.com/)
 
 * <u>Write You a Haskell</u> by Stephen Diehl. (incomplete, but useful) [Available](http://dev.stephendiehl.com/fun/)
+
+## Prior year midterms/exams
+
+* Fall 2019: [midterm](/static_files/materials/midterm_fall19.pdf), [solutions](/static_files/materials/midterm_fall19_solutions.pdf); [final](/static_files/materials/final_fall19.pdf), [solutions](/static_files/materials/final_fall19_solutions.pdf), 
+* Spring 2019: [midterm](/static_files/materials/midterm_spr19.pdf), [solutions](/static_files/materials/midterm_spr19_solutions.pdf); [final](/static_files/materials/final_spr19.pdf), [solutions](/static_files/materials/final_spr19_solutions.pdf
+
