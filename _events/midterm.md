@@ -8,6 +8,6 @@ hide_from_announcments: true
 
 **1 Double-sided "cheat sheet" allowed**
 
-**Covers material through "Datatypes and Recursion"**
+**Covers material through "Higher Order Functions"**
 
 * [Fall 2019 midterm](/static_files/materials/midterm-fall19.pdf)
