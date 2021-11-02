@@ -8,5 +8,6 @@ links:
       name: slides
     - url: /static_files/presentations/env-handout.pdf
       name: handout
-hide_from_announcments: true
+hide_from_announcments: false
+released: true
 ---
