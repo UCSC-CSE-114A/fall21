@@ -13,6 +13,6 @@ links:
       name: slides
     - url: /static_files/presentations/hof-handout.pdf
       name: handout
-hide_from_announcments: false
+hide_from_announcments: true
 released: true
 ---
