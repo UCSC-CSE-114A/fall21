@@ -4,6 +4,9 @@ KEYS=$(wildcard $(SLIDES_PATH)/*.key)
 PDFS=$(addsuffix .pdf,$(basename $(KEYS)))
 THUMBS=$(addsuffix .jpg,$(basename $(KEYS)))
 
+all:
+	echo "use 'make slides' on macOS to create pdfs of Keynote slides"
+
 slides: $(PDFS) $(THUMBS)
 
 $(SLIDES_PATH)/%.pdf: $(SLIDES_PATH)/%.key
