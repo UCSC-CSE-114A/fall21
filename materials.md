@@ -37,4 +37,4 @@ it below. More ebooks may become available through the library soon.
 ## Prior year midterms/exams
 
 * Fall 2019: [midterm](/static_files/materials/midterm-fall19.pdf); [solutions](/static_files/materials/midterm-fall19-solutions.pdf)
-* Fall 2019: [final](/static_files/materials/final-fall19.pdf) 
+* Fall 2019: [final](/static_files/materials/final-fall19.pdf); [solutions](/static_files/materials/final-fall19-solutions.pdf) 
