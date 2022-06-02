@@ -1,0 +1,749 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=letter, fontsize=13pt]{article} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+%\usepackage{sectsty} % Allows customizing section commands
+%\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+  
+
+\usepackage{color}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{inconsolata}
+\usepackage{framed}
+\usepackage{mathpartir}
+
+\lstset{language=Haskell}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{myblue}{rgb}{0.2,0.2,0.8}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+%  numbers=left,
+  basicstyle=\ttfamily,
+  showstringspaces=false,
+  backgroundcolor=\color{white},   % choose the background color
+%  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={(*}{*)},          % if you want to add LaTeX within your code
+  keywordstyle=\color{mymauve},       % keyword style
+}
+
+% Add your keywords here, and have this in a separate file
+% and include it in your preamble
+\lstset{emph={%  
+    DECR,EQL,TRUE, FALSE, ITE, NOT, AND, OR, PAIR, FST, SND, ZERO, ONE,% 
+    TWO, THREE, FOUR, FIVE, INC, ADD, MUL, ISZ, GET, APPEND, REVERSE, FIX, EMPTY, S\_GET, CONVERT, LENGTH%
+    },emphstyle={\bfseries}%
+}%
+
+
+\usepackage[margin=0.75in]{geometry}
+%\usepackage{fancyhdr} % Custom headers and footers
+%\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+%\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+%\fancyfoot[L]{} % Empty left footer
+%\fancyfoot[C]{} % Empty center footer
+%\fancyfoot[R]{\thepage} % Page numbering for right footer
+%\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+%\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+%\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+%\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\newif\ifshowanswers\showanswerstrue
+%\newif\ifshowanswers\showanswersfalse
+
+\title{\vspace{-2em} 	
+\normalfont \normalsize 
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+{\huge CSE 114A, Fall 2021 Final} \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\date{\vspace{-4em}} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% TODO : Random list?
+% https://tex.stackexchange.com/questions/96645/random-shuffle-itemize
+\begin{center}
+ {\Large
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Section} & \textbf{Points} & \textbf{Score} \\
+\hline
+Part I     & 40 points  & \\
+\hline
+Part II   &  40 points &   \\
+\hline
+Part III   &  100 points &   \\
+\hline
+ \textbf{Total} & 180 points &   \\
+\hline
+\end{tabular}
+}
+
+\end{center}
+\large 
+
+
+\paragraph{\textbf{ Instructions} }
+\begin{itemize}
+
+\item \textbf{You have 180 minutes to complete this exam.}
+
+\item This exam is \textbf{closed book}.  You may use one double-sided
+page of notes, but no other materials.
+
+\item Avoid seeing anyone else's work or allowing yours to be seen.
+
+\item Do not communicate with anyone but an exam proctor.
+
+\item To ensure fairness (and the appearance thereof),
+  \textbf{proctors will not answer questions about the content of the exam}. If you are unsure 
+  of how to interpret a problem description, state your interpretation clearly and concisely. 
+  \textit{Reasonable interpretations} will be taken into account by graders.
+
+\end{itemize}
+
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\bigskip
+\noindent NAME: \verb|____________________________________________________| \\
+\bigskip\\ 
+\bigskip\\
+CruzID: \verb|_______________________________| @ucsc.edu
+
+\newpage
+\noindent {\Huge \textbf{Part I: Lambda calculus}}
+
+\bigskip
+
+\begin{enumerate} 
+\item \textbf{[5pts]} Circle the free variables of this lambda calculus expression. For each occurrence
+  of a bound variable, draw an arrow from the occurrence to its binder.
+
+   \vspace{4em}
+  {\Large \verb|(\z -> (\x y -> z) (\z -> a) (\b -> a (\z -> x y z b))) z|}
+   \vspace{4em}
+
+
+\item \textbf{[15pts]} Use $\beta$-reductions to evaluate the following lambda terms to a normal form. \\
+\begin{enumerate}[label*=\arabic*.]
+\item \verb|(\n m -> m n) (\x y -> x (x y)) (\z w -> z (z w))|
+
+\ifshowanswers
+Possible answer: 
+\begin{itemize}
+\item
+\begin{verbatim}
+(\n.\m.m n) (\x.\y.x (x y)) (\z.\w.z (z w))
+___________________________                
+(\m.m (\x.\y.x (x y))) (\z.\w.z (z w))
+______________________________________
+(\z.\w.z (z w)) (\x.\y.x (x y))
+_______________________________
+\w.(\x.\y.x (x y)) ((\x.\y.x (x y)) w)
+   ___________________________________
+\w.\y.(\x.\y.x (x y)) w ((\x.\y.x (x y)) w y)
+      _________________                      
+\w.\y.(\y.w (w y)) ((\x.\y.x (x y)) w y)
+      __________________________________
+\w.\y.w (w ((\x.\y.x (x y)) w y))
+            _________________    
+\w.\y.w (w ((\y.w (w y)) y))
+            ______________  
+\w.\y.w (w (w (w y)))
+\end{verbatim}
+
+\end{itemize}
+\else
+  \framebox[0.90\textwidth]{\begin{minipage}[t][35em]{0.90\textwidth} \end{minipage}}
+\fi
+\newpage
+\item \verb|(\n -> (\a -> \a b -> a) n (\a b -> b)) ((\x -> x x) (\y -> y y)) (\z -> z)|
+
+\ifshowanswers
+Possible answer: 
+\begin{itemize}
+\item
+\begin{verbatim}
+(\n.(\a.\a.\b.a) n (\a.\b.a)) ((\x.x x) (\y.y y)) (\z.z)
+=b> (\a.\a.\b.a) ((\x.x x) (\y.y y)) (\a.\b.a) (\z.z)
+=b> (\a.\b.a) (\a.\b.a) (\z.z)
+=b> (\b.\a.\b.a) (\z.z)
+=b> \a.\b.a
+\end{verbatim}
+\end{itemize}
+\else
+  \framebox[0.90\textwidth]{\begin{minipage}[t][35em]{0.90\textwidth} \end{minipage}}
+\fi
+\end{enumerate}
+%Rubric:
+%\begin{itemize}
+%\item 0 pts : no attempt or nothing correct.
+%\item 1 pts : anything correct (e.g., one reduction)
+%\item 2-5 pts : more than one thing correct (e.g., two reductions), few things incorrect
+%\item 6 pts : almost correct, but one smallish error
+%\item 7 pts : completely correct
+%\end{itemize}
+
+\newpage
+
+\item \textbf{(20 pts)} Fill in a lambda calculus expression for each blank in the program
+  below to define a function \verb|RANGE| where \verb|(RANGE n m)| returns a ``list'' (encoded as
+  nested pairs) containing numbers \verb|n| through \textbf{and including} \verb|m|,
+  and terminated by \verb|FALSE|:
+
+\verb|(PAIR n (PAIR (n+1) (PAIR ... (PAIR (m-1) (PAIR m FALSE)))))|
+
+for any Church-encoded numerals \verb|n| and \verb|m| where \verb|n <= m|.  (You can assume \verb|RANGE| is only called
+with \verb|n <= m|.) For example,
+
+\verb|(RANGE ONE FIVE) =~> (PAIR ONE (PAIR TWO (PAIR THREE (PAIR FOUR (PAIR FIVE FALSE)))))|.
+
+You may use any of the functions defined on the Lambda Calculus Cheat
+Sheet on the back page.  Any other helper functions you must define
+yourself.  You must use recursion for full credit.
+
+\begin{verbatim}
+let RANGE1 = \f n m -> ITE _____(3.1)_______
+                           _____(3.2)_______
+                           _____(3.3)_______
+                      
+let RANGE = ______(3.4)_______
+\end{verbatim}
+
+\ifshowanswers
+\begin{enumerate}[label*=\arabic*]
+\item \begin{minipage}[t][8em]{0.5\textwidth}
+  \begin{lstlisting}
+      EQL n m 
+  \end{lstlisting}
+\end{minipage}
+
+\item \begin{minipage}[t][8em]{0.5\textwidth}
+  \begin{lstlisting}
+      (PAIR m FALSE)
+  \end{lstlisting}
+ \end{minipage}
+\item \begin{minipage}[t][8em]{0.5\textwidth}
+  \begin{lstlisting}
+      (PAIR n (f (DECR n) m))
+  \end{lstlisting}
+    \end{minipage}
+\item \begin{minipage}[t][8em]{0.5\textwidth}
+  \begin{lstlisting}
+      FIX RANGE1
+  \end{lstlisting}
+    \end{minipage}
+\end{enumerate}
+\else
+\begin{enumerate}[label*=\arabic*]
+  \item \framebox[0.75\textwidth]{\begin{minipage}[t][8em]{0.75\textwidth} \end{minipage}}
+  \item \framebox[0.75\textwidth]{\begin{minipage}[t][8em]{0.75\textwidth} \end{minipage}}
+  \item \framebox[0.75\textwidth]{\begin{minipage}[t][8em]{0.75\textwidth} \end{minipage}}
+  \item \framebox[0.75\textwidth]{\begin{minipage}[t][8em]{0.75\textwidth} \end{minipage}}
+\end{enumerate}
+\fi
+
+\newpage
+\noindent {\Huge \textbf{Part II: Formalization}}
+
+Consider the following grammar for a language that
+supports arithmetic functions on integer pairs (and only pairs) of the form \texttt{(n1,n2)} for any integer \texttt{n}.
+
+{\large \textbf{Grammar}}
+\begin{lstlisting}
+e ::= (n1, n2) | x | (\x -> e) | (e1 e2) | (e1 + e2)
+\end{lstlisting}
+(\texttt{x} is an alphanumeric string representing a variable name)
+
+For example, the function \verb|(\x -> (\y –> (x + y)))| could be applied to the pairs
+\verb|(1, 2)| and \verb|(2, 4)| as follows:
+\begin{verbatim}
+ (((\x -> \y –> x + y) (1, 2)) (2, 4)) =~> (3,6)
+\end{verbatim}
+
+{\large \textbf{Types}}
+
+Types are represented by the following grammar:
+\begin{lstlisting}
+T := (Int, Int) | T1 -> T2
+\end{lstlisting}
+
+
+{\large \textbf{Type system}}
+
+Below is a partial type system for this language.
+\begin{figure*}[h]
+\begin{verbatim}
+[T-Var] -------------------        [T-Pair] --------------------------- 
+        [x:T] |- x :: T                     G |- (n1, n2) :: (Int, Int) 
+                                                                                
+          G, x:T1 |- e :: T2               G |- e1 :: T1 -> T2   G |- e2 :: T1  
+[T-Abs] ------------------------   [T-App] ----------------------------------- 
+        G |- (\x -> e) :: T1 -> T2         G |- (e1 e2) :: T2 
+
+\end{verbatim}
+\end{figure*}
+
+\item \textbf{[5pts]} The above rules are missing a rule for typing add expressions. Fill in the missing
+  parts of the \texttt{T-Add} rule below.
+\begin{verbatim}
+        G |- e1 :: _4.1_     G |- e2 :: _4.2_
+[T-Add] -----------------------------------------
+                G |- e1 + e2 :: (Int, Int)
+\end{verbatim}
+  
+\begin{enumerate}[label*=\arabic*]
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+\end{enumerate}
+
+\newpage
+\item \textbf{[20pts]} Below is a partial proof that \verb|(\x -> \y -> x + y) (1,2) (3,4)| is well-typed. 
+For each blank, fill in a typing rule or type to complete the proof.
+\begin{figure*}[h]
+\begin{verbatim}
+[_5.1_] ----------------------------------------  [_5.2_]--------------------------------
+          G,x:(Int,Int),y:(Int,Int)|- y :: _5.3_   G,x:(Int,Int),y:(Int,Int)|- x :: _5.4_  
+[_5.5_] ---------------------------------------------------------------------------------
+          G,x:(Int,Int),y:(Int,Int) |- (x + y) :: _5.6_ 
+[_5.7_] -----------------------------------------------
+          G,[x:(Int,Int)] |- (\y -> x + y) :: _5.8_ 
+[_5.9_] ---------------------------------    -------------[_5.10_]                        
+          G |- (\x -> \y -> x + y) :: _5.11_  G |- (1,2) :: _5.12_
+[_5.13_] -------------------------------------------------------- [_5.14_]-----------------
+          G |- (\x -> \y -> x + y) (1,2) :: _5.15_                     G |- (3,4) :: _5.16_
+[_5.17_] ------------------------------------------------------------------------------------
+          G |- (\x -> \y -> x + y) (1,2) (3,4) :: (Int, Int)
+\end{verbatim}
+\end{figure*}
+\begin{enumerate}[label*=\arabic*]
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+  \item \framebox[0.5\textwidth]{\begin{minipage}[t][4em]{0.5\textwidth} \end{minipage}}
+\end{enumerate}
+
+\newpage
+
+{\Large \textbf{Unification}}
+
+Fill in the letter of the \textbf{one} item that best answers the
+questions below.
+
+\item \textbf{[5pts]} What is the most general unifier of the following types? \\
+  \begin{mathpar}
+    \verb|(a -> b -> c)|
+
+    \verb|(x -> y)|  \\
+  \end{mathpar}
+  \begin{enumerate}[label=\Large\protect\textcircled{\large\alph*},itemsep=1em]
+   \item \verb|[ x / (a -> b), y / c ]|
+   \item \verb|[ (a -> b) / x, c / y ]|
+   \item \verb|[ a / x , (b -> c) / y ]|
+   \item \verb|[ x / a, y / (b -> c) ]|
+   \item None of the above
+   \item Cannot unify
+\end{enumerate}
+  \bigskip
+  \bigskip
+  \bigskip
+
+\item \textbf{[5pts]} What is the most general unifier of the following types? \\
+  \begin{mathpar}
+    \verb|(Int -> a)|
+
+    \verb|(a -> b)| \\
+  \end{mathpar}
+  \begin{enumerate}[label=\Large\protect\textcircled{\large\alph*},itemsep=1em]
+   \item \verb|[ a / Int, b / Int ]|
+   \item \verb|[ b / Int, a / b ]|
+   \item \verb|[ a / b, a / Int ]|
+   \item \verb|[ a / b, b / a, a / Int]|
+   \item None of the above
+   \item Cannot unify
+\end{enumerate}
+  \bigskip
+  \bigskip
+  \bigskip
+
+\newpage
+
+\item \textbf{[5pts]} What is the most general unifier of the following types? \\
+  \begin{mathpar}
+    \verb|(Int -> Int -> b)|
+
+    \verb|(a -> b)| \\ 
+
+  \end{mathpar}
+  \begin{enumerate}[label=\Large\protect\textcircled{\large\alph*},itemsep=1em]
+   \item \verb|[ a / Int, b / (Int -> b) ]|
+   \item \verb|[ a / (Int -> Int) ]|
+   \item \verb|[ a / Int, b / Int, b / (Int -> Int) ]|
+   \item \verb|[ a / Int, Int / b, b / (Int -> Int) ]|
+   \item None of the above
+   \item Cannot unify
+\end{enumerate}
+  \bigskip
+  \bigskip
+  \bigskip
+
+\newpage
+\noindent {\Huge \textbf{Part III: Haskell}}
+\bigskip
+\bigskip
+\bigskip
+
+\item \textbf{[5pts]} Given the following definition of \texttt{nats}:
+\begin{lstlisting}
+nats = 0 : next 1
+  where
+    next n = n : next (n+1)
+\end{lstlisting}
+  What does the expression \verb|(head (tail (tail (tail (map (* 2) nats)))))|
+  evaluate to?
+  \begin{enumerate}[label=\Large\protect\textcircled{\large\alph*},itemsep=1em]
+   \item 3
+   \item 6 
+   \item 8
+   \item runtime error
+   \item infinite loop
+   \item type error 
+\end{enumerate}
+
+\item \textbf{[5pts]}  What does this Haskell expression evaluate to?
+  (See Haskell cheat sheet for definition of foldl.)
+\begin{lstlisting}
+foldl (flip (:) . reverse) [] [1, 2, 3]
+\end{lstlisting}
+  \begin{enumerate}[label=\Large\protect\textcircled{\large\alph*},itemsep=1em]
+    \item \verb|[1, 2, 3]|
+    \item \verb|[3, 2, 1]|
+    \item \verb|[2, 1, 3]|
+    \item \verb|[3, 1, 2]|
+    \item Type error
+    \item None of the above
+  \end{enumerate}
+
+\newpage
+
+For the following questions, carefully consider the Haskell definitions below
+\begin{lstlisting}
+data Gift = Clothes Size Color
+          | Toy String
+          | Cash Int
+          | Cookies Flavor
+  deriving (Show, Eq)
+
+data Size = S | M | L
+  deriving (Show, Eq)
+data Color = Red | Blue | Green
+  deriving (Show, Eq)
+data Flavor = Chocolate | Oatmeal | Sugar
+  deriving (Show, Eq)
+
+data WrappedGift = Card String String Gift
+                 | Bag  String String Gift
+                 | Box  String String Gift
+
+unwrap :: String -> [WrappedGift] -> [Gift]
+unwrap _ [] = []
+unwrap name (w:ws) = 
+  case w of
+    Card to from g | to == name -> g:(unwrap name ws)
+    Bag  to from g | to == name -> g:(unwrap name ws)
+    Box  to from g | to == name -> g:(unwrap name ws)
+    _ -> unwrap name ws
+
+keep :: [Gift] -> [Gift]
+keep = filter isKeeper
+  where
+    isKeeper (Clothes _ _) = True
+    isKeeper (Clothes S Green) = False
+    isKeeper (Cookies _) = False
+    isKeeper (Toy name) = isPrefixOf "Lego" name
+    isKeeper _ = True
+\end{lstlisting}
+
+\newpage
+\item \textbf{[25pts]}
+\begin{lstlisting}
+presents :: [WrappedGift]
+presents = [ Box "Alice" "Owen" (Clothes M Blue)
+           , Box "Owen" "Alice" (Clothes M Blue)
+           , Bag "Owen" "Bob" (Cookies Sugar)
+           , Bag "Bob" "Owen" (Cookies Chocolate)
+           , Card "Owen" "Carol" (Cash 25)
+           , Bag "Owen" "Carol" (Clothes L Red)
+           , Box "Owen" "Dave" (Toy "Lego Mindstorms Robot")
+           , Box "Dave" "Owen" (Toy "Lego Hogwarts Castle")
+           , Box "Owen" "Eve" (Toy "Largo Minestorms Robot")
+           , Box "Owen" "Eve" (Clothes S Green )
+           , Card "Eve" "Owen" (Cash 0)
+           ]
+\end{lstlisting}
+  Consider the above list called \verb|presents|.  What does the following program print?
+\begin{lstlisting}
+main :: IO ()
+main = putStrLn ( show (( keep . (unwrap "Owen") ) presents ))
+\end{lstlisting}
+
+\ifshowanswers
+\verb|[Clothes M Blue,Cash 25,Clothes L Red,Toy "Lego Mindstorms Robot",Clothes S Green]|
+\else
+  \framebox[0.9\textwidth]{\begin{minipage}[t][30em]{0.9\textwidth} \end{minipage}}
+\fi
+
+\newpage
+\item \textbf{[15pts]} Write an instance for the typeclass \verb|Show| for \verb|WrappedGift| that returns a string with the kind of container, the recipient, and the sender,
+  \textbf{but not the contents of the present} (of course!).  For example, \verb|show (Card "Owen" "Carol" (Cash 25))| should return
+  something like \verb|"[Card -- To: Owen, From: Carol]"|.
+  
+\begin{lstlisting}
+instance Show WrappedGift where
+\end{lstlisting}
+  \ifshowanswers
+  \begin{verbatim}
+  show (Card to from _) = "[Card] To:" ++ to ++ " From:" ++ from
+  show (Bag  to from _) = "[Bag] To:" ++ to ++ " From:" ++ from
+  show (Box  to from _) = "[Box] To:" ++ to ++ " From:" ++ from
+ \end{verbatim}
+  \else
+  \framebox[0.9\textwidth]{\begin{minipage}[t][30em]{0.9\textwidth} \end{minipage}}
+  \fi
+
+\newpage
+\newpage
+
+\item \textbf{[20pts]}
+  Implement a function \verb|wrap| that takes a \verb|String| for the receiver , a \verb|String| for the sender, and a \verb|Gift| and returns a \verb|WrappedGift|.
+  Gifts should be wrapped according to what kind of gift they are. Clothes and toys go in boxes, cookies go in bags, and cash goes in cards. For example,
+
+  \verb|wrap "Alice" "Bob" [Clothes L Red, Cash 20, Toy "train", Cookies Sugar]|
+
+  should return the list
+
+\begin{verbatim}
+  [ Box  "Alice" "Bob" (Clothes L Red)
+  , Card "Alice" "Bob" (Cash 20)
+  , Box  "Alice" "Bob" (Toy "train")
+  , Bag  "Alice" "Bob" (Cookies Sugar)
+  ]
+\end{verbatim}
+  
+\begin{lstlisting}
+  wrap :: String -> String -> Gift -> Wrapped
+\end{lstlisting}
+  \ifshowanswers
+  \begin{verbatim}
+    wrap to from (Cookies f)    = Bag  to from (Cookies f)
+    wrap to from (Clothes sz c) = Box  to from (Clothes sz c)
+    wrap to from (Cash d)       = Card to from (Cash d)
+    wrap to from (Toy n)        = Box  to from (Toy n)
+ \end{verbatim}
+  \else
+  \framebox[0.9\textwidth]{\begin{minipage}[t][35em]{0.9\textwidth} \end{minipage}}
+  \fi
+
+\newpage
+\item \textbf{[30pts]}
+  Now write a function \verb|regift| that unwraps all unwanted (i.e., according to the function \verb|keep|) gifts for
+  a recipient and re-wraps them for a new recipient.  For example, 
+\begin{verbatim}
+  regift "Bob" "Alice" ([ Bag "Bob" "Owen" (Cookies Chocolate) 
+                        , Box "Bob" "Eve"  (Toy "Lego X-Wing")
+                        , Box "Owen" "Bob" (Toy "Pet Rock")
+                        ]) 
+
+\end{verbatim}
+ should return \verb|[Bag "Alice" "Bob" (Cookies Chocolate)]| since
+Bob received \verb|(Cookies Chocolate)| from Owen, but they were not
+part of the list returned by \verb|keep|.  You may find the functions
+\verb|elem| and/or \verb|notElem| useful. See the Haskell Cheat sheet
+for details.
+
+\begin{lstlisting}
+regift :: String -> String -> [WrappedGift] -> [WrappedGift]
+\end{lstlisting}
+
+\ifshowanswers
+\begin{lstlisting}
+regift oldTo newTo wrapped = regift_helper gifts
+ where
+  gifts = unwrap oldTo wrapped
+  keepers = keep gifts
+
+  regift_helper [] = []
+  regift_helper (g:gs) | elem g keepers = regift_helper gs
+                       | otherwise      = wrap g : regift_helper gs
+\end{lstlisting} 
+\else
+  \framebox[0.9\textwidth]{\begin{minipage}[t][40em]{0.9\textwidth} \end{minipage}}
+\fi
+
+\end{enumerate}
+\newpage
+\[ \]
+\newpage
+\section{Lambda calculus cheat sheet}
+\begin{lstlisting}
+-- Booleans --------------------------------
+let TRUE =\x y -> x
+let FALSE = \x y -> y
+let ITE = \b x y -> b x y
+let NOT = \b x y -> b y x
+let AND = \b1 b2 -> ITE b1 b2 FALSE 
+let OR = \b1 b2 -> ITE b1 TRUE b2
+
+-- Numbers ---------------------------------
+let ZERO = \f x-> x
+let ONE = \f x -> f x 
+let TWO = \f x -> f (f x) 
+let THREE = \f x -> f (f (f x))
+let FOUR = \f x -> f (f (f (f x))
+let FIVE = \f x -> f (f (f (f (f x))
+
+-- Pairs -----------------------------------
+let PAIR = \x y b -> b x y 
+let FST = \p -> p TRUE 
+let SND = \p -> p FALSE
+
+-- Lists -----------------------------------
+let EMPTY = \xs -> xs (\x y z -> FALSE) TRUE
+let CONS  = PAIR
+let NIL   = FALSE
+let HEAD  = FST
+let TAIL  = SND
+
+-- Arithmetic ------------------------------
+let INC   = \n f x -> f (n f x)
+let ADD   = \n m -> n INC m 
+let MUL   = \n m -> n (ADD m) ZERO
+let ISZ   = \n ->   -- return TRUE if n == 0 --
+let DECR  = \n ->   -- decrement n by one --  
+let EQL   = \a b -> -- return TRUE if a == b, otherwise FALSE --
+
+-- Recursion -------------------------------
+let FIX = \stp -> (\x -> stp (x x)) (\x -> stp (x x))
+\end{lstlisting}
+
+\newpage
+\section{Haskell cheat sheet}
+\begin{lstlisting}
+foldr :: (a -> b -> b) -> b -> [a] -> b
+foldr f b []     = b
+foldr f b (x:xs) = f x (foldr f b xs)
+
+foldl :: (b -> a -> b) -> b -> [a] -> b
+foldl f b xs          = helper b xs
+  where
+    helper acc []     = acc
+    helper acc (x:xs) = helper (f acc x) xs
+
+filter :: (a -> Bool) -> [a] -> [a]
+filter pred []    = []
+filter pred (x:xs)
+  | pred x         = x : filter pred xs
+  | otherwise      = filter pred xs
+
+map :: (a -> b) -> [a] -> [b]
+map _ []     = []
+map f (x:xs) = f x : map f xs
+
+flip :: (a -> b -> c) -> b -> a -> c
+flip f x y = f y x
+
+(.) :: (b -> c) -> (a -> b) -> a -> c
+(.) f g x = f (g x)
+
+(++) :: [a] -> [a] -> [a]
+(++) []     ys = ys
+(++) (x:xs) ys = x : xs ++ ys
+
+-- returns the elements of a list in reverse order.
+reverse :: [a] -> [a]
+
+-- Does the element occur in the list?
+elem    :: (Eq a) => a -> [a] -> Bool
+-- Negation of elem: does the element *not* occur in the list?
+notElem :: (Eq a) => a -> [a] -> Bool
+
+-- Extract the first element of a list, which must be non-empty.
+head :: [a] -> a
+-- Extract the elements after the head of a list, which must be non-empty.
+tail :: [a] -> [a]
+\end{lstlisting}
+
+\end{document}
